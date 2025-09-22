@@ -1,0 +1,87 @@
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARCA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+
+</head>
+
+<body>
+
+    <header class="contenedor-header">
+        <div class="logo-contenedor">
+            <h1 class="logo">ARCA |</h1>
+            <p>AGENCIA DE RECAUDACION</p>
+        </div>
+    </header>
+
+    <main class="contenedor-main">
+        <form class="contenedor-form">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+            </div>
+
+            <div class="mb-3">
+                <label for="departamento" class="form-label">Departamento</label>
+                <input type="text" class="form-control" id="departamento" placeholder="Ingrese su departamento">
+            </div>
+
+            <div class="mb-3">
+                <label for="fecha-nac" class="form-label">Fecha de Nacimiento</label>
+                <input type="date" class="form-control" id="fecha-nac" placeholder="Ingrese su fecha de Nacimiento">
+            </div>
+
+
+            <input class="btn btn-success" type="button" value="Cargar empleado" onclick= "guardarEmpleado()">
+            <input class="btn btn-success" type="button" value="Promedio de edad" onclick= "calcularPromedio()">
+
+            <div class="container-tabla">
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Departamento</th>
+                            <th scope="col">Fecha de Naciemiento</th>
+                            <th scope="col">Edad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                </div>
+
+                <p id="promedioEdad"></p>
+        </form>
+    </main>
+
+
+
+    <footer class="contenedor-footer">
+        <h4>Contactactanos</h4>
+            <p>Teléfono: 0810-999-2347</p>
+
+        
+            <h4>Oficinas</h4>
+            <ul>
+                <li>PB, Blvd. San Juan 325</li>
+                <li>Av. Marcelo T. de Alvear 448</li>
+                <li>PB, Blvd. San Juan 325</li>
+            </ul>
+    </footer>
+
+
+    <script src="empleadosEdad.js"></script>
+</body>
+</html>
