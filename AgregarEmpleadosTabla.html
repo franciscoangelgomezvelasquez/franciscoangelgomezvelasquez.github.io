@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+
+    <header class="contenedor-header">
+        <div class="logo-contenedor">
+            <h1 class="logo">Banco Argentina</h1>
+        </div>
+    </header>
+
+    <main class="contenedor-main">
+        <form class="contenedor-form">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+            </div>
+
+            <div class="mb-3">
+                <label for="departamento" class="form-label">Departamento</label>
+                <input type="text" class="form-control" id="departamento" placeholder="Ingrese su departamento">
+            </div>
+
+            <div class="mb-3">
+                <label for="salario" class="form-label">Salario</label>
+                <input type="number" class="form-control" id="salario" placeholder="Ingrese su salario">
+            </div>
+
+            <input class="btn btn-primary" type="button" value="Cargar empleado" onclick= "guardarEmpleado()">
+            <input class="btn btn-primary" type="button" value="Total de salarios" onclick= "sumarSueldos()">
+            <input class="btn btn-primary" type="button" value="Salario mas alto" onclick= "sueldoMasAlto()">
+            
+
+            <div class="container-tabla">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Departamento </th>
+                        <th scope="col">Salario</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+            </div>
+
+            <p id="sumaDeSueldos"></p>
+        </form>
+    </main>
+    
+    
+    <footer class="contenedor-footer">
+        <h4>Antencion al cliente</h4>
+        <p>0810-666-4444</p>
+        <p>Av. Colón 2152 8:30 a.m - 1:30 p.m</p>
+    </footer>
+
+    <script src="empleados.js" ></script>
+</body>
+</html>
